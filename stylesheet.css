@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Montserrat';
+}
+
+@keyframes hover{
+    0%{
+        transform: translatey(0px)
+    }
+    50% {
+        transform: translatey(-30px);
+	}
+
+    100% {
+		transform: translatey(0px);
+	}
+
+}
+
+@keyframes color-change{
+    0%{
+        color: #1e6091;
+    }
+    10%{
+        color: #b5e48c;
+    }
+    20%{
+        color:#99d98c;
+    }
+    30%{
+        color:#76c893;
+    }
+    40%{
+        color:#52b69a;
+    }
+    50%{
+        color:#34a0a4;
+    }
+    60%{
+        color:#168aad;
+    }
+    70%{
+        color:#1a759f;
+    }
+    100%{
+        color:#1e6091;
+    }
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+:root{
+    --letter-spacing:1px;
+    --font-size:4rem;
+}
+
+.animate{
+    animation:color-change 3s infinite;
+}
+
+.text-underline{
+    text-decoration: underline;
+}
+
+
+h1{
+    font-size: var(--font-size);
+    letter-spacing: var(--letter-spacing);
+}
+
+.v-header{
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+}
+
+.container{
+    max-width:960px;
+    padding:0 1rem 0 1rem;
+    margin:auto;
+    text-align: center;
+}
+
+.fullscreen-video-wrap{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    overflow: hidden;
+}
+
+.fullscreen-video-wrap video{
+    min-width:100%;
+    min-height:100%;
+}
+
+.video-overlay{
+    height:100vh;
+    width:100vw;
+    position:absolute;
+    top:0;
+    left:0;
+    background:#225470;
+    z-index:1;
+    opacity: 0.30;
+}
+
+.hero-text-content{
+    overflow: hidden;
+    z-index: 2;
+}
+
+.scroll-img img{
+    animation:hover 2.5s ease-in-out infinite;
+    margin:90px;
+    width:50px;
+    height:50px;
+}
+
+.hero-text-content h1{
+    margin:50px;
+    font-size: 8rem;
+    letter-spacing: 50px;
+}
+
+.hero-text-content p{
+    font-size: 1.3rem;
+}
+
+
+
+.section-a{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color:white;
+    height:100vh;
+    background:#001219;
+}
+
+.content{
+    width:60%;
+}
+
+.content p{
+    margin:100px;
+    letter-spacing: 1px;
+}
+
+.image{
+    animation:hover 6s ease-in-out infinite;
+}
+
+.content-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height:100vh;
+    width:100vw;
+}
+
+.content-container p{
+    margin-top:150px;
+}
+
+.content-container-text{
+    width:50%;
+}
+
+.section-b{
+    color:white;
+    background: rgb(0,18,25);
+    background: linear-gradient(180deg, rgba(0,18,25,1) 0%, rgba(0,18,25,0.4234068627450981) 53%, rgba(255,255,255,0.5) 100%);
+}
+
+.btn{
+    background-color: #001219;
+    color:white;
+    border-radius: 30px;
+    font-size: 20px;
+    border:none;
+    padding:40px;
+    margin:150px;
+}
+
+.contact{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-links img{
+    margin:30px;
+    height:50px;
+}
+
+@media screen and (max-width:1367px) {
+    .hero-text-content{
+        width:100%;
+        height: 100%;;
+    }
+
+    .content-container{
+        width:100%;
+        height:100%;
+    }
+
+    .content-container-text p{
+        font-size: 20px;
+    }
+}
+
+
+
+@media screen and (max-height:640px) {
+
+    .hero-text-content{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-text-content h1{
+        margin-top:50%;
+        font-size: 25px;
+        letter-spacing: 0px;
+    }
+
+    .hero-text-content p{
+        margin-top: 50%;
+        font-size: 14px;
+    }
+
+    .scroll-img img{
+        margin-top:130px;
+        width:30px;
+        height: 30px;
+    }
+
+    .image img{
+        width:50%;
+        height:75%;
+    }
+
+    .section-a{
+        flex-direction: column;
+    }
+
+    .section-a h1,p{
+        font-size: 10px;
+    }
+
+    .content{
+        width:100%;
+        height: 100%;
+    }
+
+    .content h1{
+        font-size: 24px;
+        margin-top:20px;
+    }
+
+    .content-container h1{
+        margin-top: 20px;
+        font-size: 25px;
+    }
+
+    .content-container p{
+        font-size: 13px;
+
+    }
+
+    .section-b{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn{
+        font-size: 10px;
+        padding:10px 30px 10px 30px;
+        border-radius: 5px;
+        font-size: 19px;
+    }
+    .contact-links img{
+        width:10%;
+    }
+
+    .contact-btn{
+        width:100%;
+    }
+}
+
+@media screen and (max-height:780px) {
+
+    .hero-text-content{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-text-content h1{
+        margin-top:50%;
+        font-size: 25px;
+        letter-spacing: 0px;
+    }
+
+    .hero-text-content p{
+        margin-top: 50%;
+        font-size: 14px;
+    }
+
+    .scroll-img img{
+        margin-top:130px;
+        width:30px;
+        height: 30px;
+    }
+
+    .image img{
+        width:50%;
+        height:75%;
+    }
+
+    .section-a{
+        flex-direction: column;
+    }
+
+    .section-a h1,p{
+        font-size: 10px;
+    }
+
+    .content{
+        width:100%;
+        height: 100%;
+    }
+
+    .content h1{
+        font-size: 24px;
+        margin-top:20px;
+    }
+
+    .content-container h1{
+        margin-top: 20px;
+        font-size: 25px;
+    }
+
+    .content-container p{
+        font-size: 13px;
+
+    }
+
+    .section-b{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn{
+        font-size: 10px;
+        padding:10px 30px 10px 30px;
+        border-radius: 5px;
+        font-size: 19px;
+    }
+    .contact-links img{
+        width:10%;
+    }
+
+    .contact-btn{
+        width:100%;
+    }
+}
+
+@media screen and (max-height:870px) {
+    *{
+        font-size: 0.9rem;
+    }
+    .animate{
+        font-size: 10rem;
+    }
+
+    .text-underline{
+        font-size: 4rem;
+    }
+
+}
+
+
+
+
