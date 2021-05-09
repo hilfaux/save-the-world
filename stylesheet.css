@@ -226,84 +226,18 @@ h1{
 }
 
 
-
-@media screen and (max-height:640px) {
-
-    .hero-text-content{
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
+@media screen and (max-height:870px) {
+    *{
+        font-size: 0.9rem;
     }
-    .hero-text-content h1{
-        margin-top:50%;
-        font-size: 25px;
-        letter-spacing: 0px;
+    .animate{
+        font-size: 10rem;
     }
 
-    .hero-text-content p{
-        margin-top: 50%;
-        font-size: 14px;
+    .text-underline{
+        font-size: 4rem;
     }
 
-    .scroll-img img{
-        margin-top:130px;
-        width:30px;
-        height: 30px;
-    }
-
-    .image img{
-        width:50%;
-        height:75%;
-    }
-
-    .section-a{
-        flex-direction: column;
-    }
-
-    .section-a h1,p{
-        font-size: 10px;
-    }
-
-    .content{
-        width:100%;
-        height: 100%;
-    }
-
-    .content h1{
-        font-size: 24px;
-        margin-top:20px;
-    }
-
-    .content-container h1{
-        margin-top: 20px;
-        font-size: 25px;
-    }
-
-    .content-container p{
-        font-size: 13px;
-
-    }
-
-    .section-b{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .btn{
-        font-size: 10px;
-        padding:10px 30px 10px 30px;
-        border-radius: 5px;
-        font-size: 19px;
-    }
-    .contact-links img{
-        width:10%;
-    }
-
-    .contact-btn{
-        width:100%;
-    }
 }
 
 @media screen and (max-height:780px) {
@@ -385,19 +319,172 @@ h1{
     }
 }
 
-@media screen and (max-height:870px) {
-    *{
-        font-size: 0.9rem;
+@media screen and (max-height:640px) {
+
+    .hero-text-content{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
     }
-    .animate{
-        font-size: 10rem;
+    .hero-text-content h1{
+        margin-top:50%;
+        font-size: 25px;
+        letter-spacing: 0px;
     }
 
-    .text-underline{
-        font-size: 4rem;
+    .hero-text-content p{
+        margin-top: 50%;
+        font-size: 14px;
     }
 
+    .scroll-img img{
+        margin-top:130px;
+        width:30px;
+        height: 30px;
+    }
+
+    .image img{
+        width:50%;
+        height:75%;
+    }
+
+    .section-a{
+        flex-direction: column;
+    }
+
+    .section-a h1,p{
+        font-size: 10px;
+    }
+
+    .content{
+        width:100%;
+        height: 100%;
+    }
+
+    .content h1{
+        font-size: 24px;
+        margin-top:20px;
+    }
+
+    .content-container h1{
+        margin-top: 20px;
+        font-size: 25px;
+    }
+
+    .content-container p{
+        font-size: 13px;
+
+    }
+
+    .section-b{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn{
+        font-size: 10px;
+        padding:10px 30px 10px 30px;
+        border-radius: 5px;
+        font-size: 19px;
+    }
+    .contact-links img{
+        width:10%;
+    }
+
+    .contact-btn{
+        width:100%;
+    }
 }
+
+@media screen and (max-width:640px) {
+
+    .hero-text-content{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-text-content h1{
+        margin-top:50%;
+        font-size: 25px;
+        letter-spacing: 0px;
+    }
+
+    .hero-text-content p{
+        margin-top: 50%;
+        font-size: 14px;
+    }
+
+    .scroll-img img{
+        margin-top:130px;
+        width:30px;
+        height: 30px;
+    }
+
+    .image img{
+        width:50%;
+        height:75%;
+    }
+
+    .section-a{
+        flex-direction: column;
+    }
+
+    .section-a h1,p{
+        font-size: 10px;
+    }
+
+    .content{
+        width:100%;
+        height: 100%;
+    }
+
+    .content h1{
+        font-size: 24px;
+        margin-top:20px;
+    }
+
+    .content-container h1{
+        margin-top: 20px;
+        font-size: 25px;
+    }
+
+    .content-container p{
+        font-size: 13px;
+
+    }
+
+    .section-b{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn{
+        font-size: 10px;
+        padding:10px 30px 10px 30px;
+        border-radius: 5px;
+        font-size: 19px;
+    }
+    .contact-links img{
+        width:10%;
+    }
+
+    .contact-btn{
+        width:100%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .animate{
+        font-size: 28px;
+    }
+}
+
+
+
 
 
 
